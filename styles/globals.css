@@ -5,14 +5,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #FFFFFF
+    --background-color: #121212;
+    --text-color: #FFFFFF;
   }
 }
 
 body {
     background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
 }
 
 h1 {
-    size: 20px
+  font-family: 'Josefin Sans';
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+
+}
+p {
+  font-size: 20px
 }
