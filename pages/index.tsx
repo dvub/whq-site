@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <main>
-      HELLO!
+      <h1>Waking Hours</h1>
+      
     </main>
   )
 }
