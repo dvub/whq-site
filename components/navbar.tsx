@@ -22,7 +22,7 @@ export default function Navbar() {
     return (
         <Disclosure as="nav">
             {({ open }) => (
-                <>
+                <div className="nav">
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -44,8 +44,8 @@ export default function Navbar() {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? 'bg-gray-900' : 'text-gray-300 hover:bg-gray-700',
-                                                    'rounded-md px-3 py-2 text-sm font-medium '
+                                                    item.current ? 'bg-purple-700' : 'hover:bg-gray-700',
+                                                    'rounded-md px-3 py-2 text-sm font-medium'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
@@ -66,7 +66,7 @@ export default function Navbar() {
                                     as="a"
                                     href={item.href}
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                        item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
                                         'block rounded-md px-3 py-2 text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
@@ -76,7 +76,7 @@ export default function Navbar() {
                             ))}
                         </div>
                     </Disclosure.Panel>
-                </>
+                </div>
             )}
         </Disclosure>
     )
