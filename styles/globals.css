@@ -7,6 +7,11 @@
   :root {
     --background-color: #121212;
     --text-color: #FFFFFF;
+    --primary: #7C00CF;
+    --secondary: #35F2CC;
+    --selected: #1f0033;
+    --hover: #d699ff;
+
   }
 }
 
@@ -26,5 +31,13 @@ h1 {
 
 }
 p {
-  font-size: 20px
+  font-size: 20px;
+}
+
+b {
+  background: var(--primary);
+  background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-attachment: fixed;
 }
