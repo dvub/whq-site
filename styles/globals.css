@@ -28,10 +28,28 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 
 }
 p {
   font-size: 20px;
+  max-width: 50vw;
+  text-align: left;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
+
+}
+ul {
+  font-size: 20px;
+  max-width: 50vw;
+  text-align: left;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
 }
 
 b {
@@ -40,4 +58,11 @@ b {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-attachment: fixed;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+svg {
+  display: inline-block;
 }

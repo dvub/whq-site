@@ -5,18 +5,11 @@ import { useEffect, useState } from "react";
 export default function Home() {
   return (
     <div>
-      <h1 style={{ marginTop: "10vh" }}>Waking Hours</h1>
-      <div className="gradient">
-        <p
-          style={{
-            maxWidth: "50vw",
-            textAlign: "left",
-            margin: "auto",
-            marginTop: "10vh",
-          }}
-        >
+      <h1>Waking Hours</h1>
+      <div>
+        <p>
           We&apos;re the <b>Waking Hours Quintet.</b>
-          &nbsp;We play jazz in <b>Reno, NV</b>. Actually, we play a lot of
+          &nbsp;We play <b>jazz</b> in Reno, NV. Actually, we play a lot of
           genres. We just like making <b>cool sounds</b>. If you want to learn
           more about us, go&nbsp;
           <Link href={"/about"}>
@@ -28,7 +21,8 @@ export default function Home() {
       <div
         style={{
           display: "flex",
-          marginTop: "10vh",
+          marginTop: "5vh",
+          marginBottom: "5vh",
           alignItems: "center",
           justifyContent: "center",
         }}
