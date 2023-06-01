@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #121212;
-    --text-color: #FFFFFF;
-    --primary: #7C00CF;
-    --secondary: #35F2CC;
-    --selected: #1f0033;
-    --hover: #d699ff;
-
-  }
+:root {
+  --background-color: #121212;
+--text-color: #FFFFFF;
+--primary: #7C00CF;
+--secondary: #35F2CC;
+--selected: #1f0033;
+--hover: #d699ff;
 }
+
 
 body {
     background: var(--background-color);
