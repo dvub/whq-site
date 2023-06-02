@@ -1,14 +1,35 @@
+import Email from '../components/email';
 export default function Contact() {
     return (
         <div>
             <h1>Contact Us</h1>
             <p>
-                If you&apos;re interested in hiring us for an event, <b>please reach out to one of these emails</b>. Also, you can use these emails if you would like to contact one of us individually.
+                If you&apos;re interested in hiring us for an event, <b>please reach out to this email</b>. 
                 <br/>
-                &gt; jake@wakinghoursquintet.com
+                <br/>
+                &gt;{" "}<Email email="contact"></Email>
                 
             </p>
-            
+            <p>
+                If you would like to <b>contact one of us individually</b>, you can use these emails:
+            </p>
+            <ul>
+                <li>
+                    &gt;{" "}<Email email="jake"></Email>
+                </li>
+                <li>
+                    &gt;{" "}<Email email="kaya"></Email>
+                </li>
+                <li>
+                    &gt;{" "}<Email email="evan"></Email>
+                </li>
+                <li>
+                    &gt;{" "}<Email email="jackson"></Email>
+                </li>
+                <li>
+                    &gt;{" "}<Email email="teagan"></Email>
+                </li>
+            </ul>
             <p>
                 (Please don&apos;t spam any of our emails, thx :D)
             </p>
