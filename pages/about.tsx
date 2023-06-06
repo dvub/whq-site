@@ -1,7 +1,13 @@
+import Head from "next/head";
+
 export default function About() {
+  const title = "About Us";
   return (
     <div>
-      <h1>About Us</h1>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <h1>{title}</h1>
       <div>
         <p>
           The Waking Hours Quintet is comprised of <b>five players</b>:

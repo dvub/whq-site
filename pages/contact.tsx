@@ -1,14 +1,19 @@
+import Head from 'next/head';
 import Email from '../components/email';
 export default function Contact() {
+    const title = "Contact Us";
     return (
         <div>
-            <h1>Contact Us</h1>
+            <Head>
+                <title>{title}</title>
+            </Head>
+            <h1>{title}</h1>
             <p>
-                If you&apos;re interested in hiring us for an event, <b>please reach out to this email</b>. 
-                <br/>
-                <br/>
+                If you&apos;re interested in hiring us for an event, <b>please reach out to this email</b>.
+                <br />
+                <br />
                 &gt;{" "}<Email email="contact"></Email>
-                
+
             </p>
             <p>
                 If you would like to <b>contact one of us individually</b>, you can use these emails:
